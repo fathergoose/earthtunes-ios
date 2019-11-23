@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3DEAE7F2389BC82007E2951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAE7E2389BC82007E2951 /* AppDelegate.swift */; };
+		E3DEAE812389BC82007E2951 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAE802389BC82007E2951 /* SceneDelegate.swift */; };
+		E3DEAE832389BC82007E2951 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAE822389BC82007E2951 /* ContentView.swift */; };
+		E3DEAE852389BC83007E2951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3DEAE842389BC83007E2951 /* Assets.xcassets */; };
+		E3DEAE882389BC83007E2951 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3DEAE872389BC83007E2951 /* Preview Assets.xcassets */; };
+		E3DEAE8B2389BC83007E2951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3DEAE892389BC83007E2951 /* LaunchScreen.storyboard */; };
+		E3DEAE962389BC83007E2951 /* EarthTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAE952389BC83007E2951 /* EarthTunesTests.swift */; };
+		E3DEAEA12389BC83007E2951 /* EarthTunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAEA02389BC83007E2951 /* EarthTunesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3DEAE922389BC83007E2951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3DEAE732389BC82007E2951 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3DEAE7A2389BC82007E2951;
+			remoteInfo = EarthTunes;
+		};
+		E3DEAE9D2389BC83007E2951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3DEAE732389BC82007E2951 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3DEAE7A2389BC82007E2951;
+			remoteInfo = EarthTunes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E3DEAE7B2389BC82007E2951 /* EarthTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DEAE7E2389BC82007E2951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3DEAE802389BC82007E2951 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E3DEAE822389BC82007E2951 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E3DEAE842389BC83007E2951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3DEAE872389BC83007E2951 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3DEAE8A2389BC83007E2951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3DEAE8C2389BC83007E2951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3DEAE912389BC83007E2951 /* EarthTunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthTunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DEAE952389BC83007E2951 /* EarthTunesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthTunesTests.swift; sourceTree = "<group>"; };
+		E3DEAE972389BC83007E2951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3DEAE9C2389BC83007E2951 /* EarthTunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthTunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DEAEA02389BC83007E2951 /* EarthTunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthTunesUITests.swift; sourceTree = "<group>"; };
+		E3DEAEA22389BC83007E2951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3DEAE782389BC82007E2951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DEAE8E2389BC83007E2951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DEAE992389BC83007E2951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3DEAE722389BC82007E2951 = {
+			isa = PBXGroup;
+			children = (
+				E3DEAE7D2389BC82007E2951 /* EarthTunes */,
+				E3DEAE942389BC83007E2951 /* EarthTunesTests */,
+				E3DEAE9F2389BC83007E2951 /* EarthTunesUITests */,
+				E3DEAE7C2389BC82007E2951 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3DEAE7C2389BC82007E2951 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3DEAE7B2389BC82007E2951 /* EarthTunes.app */,
+				E3DEAE912389BC83007E2951 /* EarthTunesTests.xctest */,
+				E3DEAE9C2389BC83007E2951 /* EarthTunesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3DEAE7D2389BC82007E2951 /* EarthTunes */ = {
+			isa = PBXGroup;
+			children = (
+				E3DEAE7E2389BC82007E2951 /* AppDelegate.swift */,
+				E3DEAE802389BC82007E2951 /* SceneDelegate.swift */,
+				E3DEAE822389BC82007E2951 /* ContentView.swift */,
+				E3DEAE842389BC83007E2951 /* Assets.xcassets */,
+				E3DEAE892389BC83007E2951 /* LaunchScreen.storyboard */,
+				E3DEAE8C2389BC83007E2951 /* Info.plist */,
+				E3DEAE862389BC83007E2951 /* Preview Content */,
+			);
+			path = EarthTunes;
+			sourceTree = "<group>";
+		};
+		E3DEAE862389BC83007E2951 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E3DEAE872389BC83007E2951 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3DEAE942389BC83007E2951 /* EarthTunesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3DEAE952389BC83007E2951 /* EarthTunesTests.swift */,
+				E3DEAE972389BC83007E2951 /* Info.plist */,
+			);
+			path = EarthTunesTests;
+			sourceTree = "<group>";
+		};
+		E3DEAE9F2389BC83007E2951 /* EarthTunesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E3DEAEA02389BC83007E2951 /* EarthTunesUITests.swift */,
+				E3DEAEA22389BC83007E2951 /* Info.plist */,
+			);
+			path = EarthTunesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3DEAE7A2389BC82007E2951 /* EarthTunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DEAEA52389BC83007E2951 /* Build configuration list for PBXNativeTarget "EarthTunes" */;
+			buildPhases = (
+				E3DEAE772389BC82007E2951 /* Sources */,
+				E3DEAE782389BC82007E2951 /* Frameworks */,
+				E3DEAE792389BC82007E2951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EarthTunes;
+			productName = EarthTunes;
+			productReference = E3DEAE7B2389BC82007E2951 /* EarthTunes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3DEAE902389BC83007E2951 /* EarthTunesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DEAEA82389BC83007E2951 /* Build configuration list for PBXNativeTarget "EarthTunesTests" */;
+			buildPhases = (
+				E3DEAE8D2389BC83007E2951 /* Sources */,
+				E3DEAE8E2389BC83007E2951 /* Frameworks */,
+				E3DEAE8F2389BC83007E2951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3DEAE932389BC83007E2951 /* PBXTargetDependency */,
+			);
+			name = EarthTunesTests;
+			productName = EarthTunesTests;
+			productReference = E3DEAE912389BC83007E2951 /* EarthTunesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3DEAE9B2389BC83007E2951 /* EarthTunesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DEAEAB2389BC83007E2951 /* Build configuration list for PBXNativeTarget "EarthTunesUITests" */;
+			buildPhases = (
+				E3DEAE982389BC83007E2951 /* Sources */,
+				E3DEAE992389BC83007E2951 /* Frameworks */,
+				E3DEAE9A2389BC83007E2951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3DEAE9E2389BC83007E2951 /* PBXTargetDependency */,
+			);
+			name = EarthTunesUITests;
+			productName = EarthTunesUITests;
+			productReference = E3DEAE9C2389BC83007E2951 /* EarthTunesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3DEAE732389BC82007E2951 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Listening-To-The-Solid-Earth";
+				TargetAttributes = {
+					E3DEAE7A2389BC82007E2951 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					E3DEAE902389BC83007E2951 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = E3DEAE7A2389BC82007E2951;
+					};
+					E3DEAE9B2389BC83007E2951 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = E3DEAE7A2389BC82007E2951;
+					};
+				};
+			};
+			buildConfigurationList = E3DEAE762389BC82007E2951 /* Build configuration list for PBXProject "EarthTunes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3DEAE722389BC82007E2951;
+			productRefGroup = E3DEAE7C2389BC82007E2951 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3DEAE7A2389BC82007E2951 /* EarthTunes */,
+				E3DEAE902389BC83007E2951 /* EarthTunesTests */,
+				E3DEAE9B2389BC83007E2951 /* EarthTunesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3DEAE792389BC82007E2951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DEAE8B2389BC83007E2951 /* LaunchScreen.storyboard in Resources */,
+				E3DEAE882389BC83007E2951 /* Preview Assets.xcassets in Resources */,
+				E3DEAE852389BC83007E2951 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DEAE8F2389BC83007E2951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DEAE9A2389BC83007E2951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3DEAE772389BC82007E2951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DEAE7F2389BC82007E2951 /* AppDelegate.swift in Sources */,
+				E3DEAE812389BC82007E2951 /* SceneDelegate.swift in Sources */,
+				E3DEAE832389BC82007E2951 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DEAE8D2389BC83007E2951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DEAE962389BC83007E2951 /* EarthTunesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DEAE982389BC83007E2951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DEAEA12389BC83007E2951 /* EarthTunesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3DEAE932389BC83007E2951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3DEAE7A2389BC82007E2951 /* EarthTunes */;
+			targetProxy = E3DEAE922389BC83007E2951 /* PBXContainerItemProxy */;
+		};
+		E3DEAE9E2389BC83007E2951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3DEAE7A2389BC82007E2951 /* EarthTunes */;
+			targetProxy = E3DEAE9D2389BC83007E2951 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3DEAE892389BC83007E2951 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3DEAE8A2389BC83007E2951 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3DEAEA32389BC83007E2951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3DEAEA42389BC83007E2951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3DEAEA62389BC83007E2951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EarthTunes/Preview Content\"";
+				DEVELOPMENT_TEAM = 336M3TUC78;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EarthTunes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LTTSE.EarthTunes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3DEAEA72389BC83007E2951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EarthTunes/Preview Content\"";
+				DEVELOPMENT_TEAM = 336M3TUC78;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EarthTunes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LTTSE.EarthTunes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3DEAEA92389BC83007E2951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 336M3TUC78;
+				INFOPLIST_FILE = EarthTunesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LTTSE.EarthTunesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EarthTunes.app/EarthTunes";
+			};
+			name = Debug;
+		};
+		E3DEAEAA2389BC83007E2951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 336M3TUC78;
+				INFOPLIST_FILE = EarthTunesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LTTSE.EarthTunesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EarthTunes.app/EarthTunes";
+			};
+			name = Release;
+		};
+		E3DEAEAC2389BC83007E2951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 336M3TUC78;
+				INFOPLIST_FILE = EarthTunesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LTTSE.EarthTunesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EarthTunes;
+			};
+			name = Debug;
+		};
+		E3DEAEAD2389BC83007E2951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 336M3TUC78;
+				INFOPLIST_FILE = EarthTunesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LTTSE.EarthTunesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EarthTunes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3DEAE762389BC82007E2951 /* Build configuration list for PBXProject "EarthTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DEAEA32389BC83007E2951 /* Debug */,
+				E3DEAEA42389BC83007E2951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DEAEA52389BC83007E2951 /* Build configuration list for PBXNativeTarget "EarthTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DEAEA62389BC83007E2951 /* Debug */,
+				E3DEAEA72389BC83007E2951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DEAEA82389BC83007E2951 /* Build configuration list for PBXNativeTarget "EarthTunesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DEAEA92389BC83007E2951 /* Debug */,
+				E3DEAEAA2389BC83007E2951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DEAEAB2389BC83007E2951 /* Build configuration list for PBXNativeTarget "EarthTunesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DEAEAC2389BC83007E2951 /* Debug */,
+				E3DEAEAD2389BC83007E2951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3DEAE732389BC82007E2951 /* Project object */;
+}
