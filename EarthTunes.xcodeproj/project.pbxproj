@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E323CA67238ECF0C00D01CF1 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E323CA66238ECF0C00D01CF1 /* DataManagement.swift */; };
+		E3860D2F2391BD33005E9B9B /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3860D2E2391BD33005E9B9B /* PlayerView.swift */; };
+		E3860D322391BD86005E9B9B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3860D312391BD86005E9B9B /* Player.swift */; };
 		E3DEAE7F2389BC82007E2951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAE7E2389BC82007E2951 /* AppDelegate.swift */; };
 		E3DEAE812389BC82007E2951 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAE802389BC82007E2951 /* SceneDelegate.swift */; };
 		E3DEAE832389BC82007E2951 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAE822389BC82007E2951 /* ContentView.swift */; };
@@ -15,6 +18,8 @@
 		E3DEAE8B2389BC83007E2951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3DEAE892389BC83007E2951 /* LaunchScreen.storyboard */; };
 		E3DEAE962389BC83007E2951 /* EarthTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAE952389BC83007E2951 /* EarthTunesTests.swift */; };
 		E3DEAEA12389BC83007E2951 /* EarthTunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAEA02389BC83007E2951 /* EarthTunesUITests.swift */; };
+		E3F407CC238B749B00EB5A2D /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F407CB238B749B00EB5A2D /* Sound.swift */; };
+		E3F407CE238B74BE00EB5A2D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F407CD238B74BE00EB5A2D /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E323CA66238ECF0C00D01CF1 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
+		E3860D2E2391BD33005E9B9B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		E3860D312391BD86005E9B9B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		E3DEAE7B2389BC82007E2951 /* EarthTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DEAE7E2389BC82007E2951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3DEAE802389BC82007E2951 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		E3DEAE9C2389BC83007E2951 /* EarthTunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthTunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DEAEA02389BC83007E2951 /* EarthTunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthTunesUITests.swift; sourceTree = "<group>"; };
 		E3DEAEA22389BC83007E2951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3F407CB238B749B00EB5A2D /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		E3F407CD238B74BE00EB5A2D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3860D302391BD6D005E9B9B /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				E3860D2E2391BD33005E9B9B /* PlayerView.swift */,
+				E3860D312391BD86005E9B9B /* Player.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
 		E3DEAE722389BC82007E2951 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +118,7 @@
 		E3DEAE7D2389BC82007E2951 /* EarthTunes */ = {
 			isa = PBXGroup;
 			children = (
+				E3860D302391BD6D005E9B9B /* Player */,
 				E3DEAE7E2389BC82007E2951 /* AppDelegate.swift */,
 				E3DEAE802389BC82007E2951 /* SceneDelegate.swift */,
 				E3DEAE822389BC82007E2951 /* ContentView.swift */,
@@ -106,6 +126,9 @@
 				E3DEAE892389BC83007E2951 /* LaunchScreen.storyboard */,
 				E3DEAE8C2389BC83007E2951 /* Info.plist */,
 				E3DEAE862389BC83007E2951 /* Preview Content */,
+				E3F407CB238B749B00EB5A2D /* Sound.swift */,
+				E3F407CD238B74BE00EB5A2D /* DataService.swift */,
+				E323CA66238ECF0C00D01CF1 /* DataManagement.swift */,
 			);
 			path = EarthTunes;
 			sourceTree = "<group>";
@@ -269,7 +292,12 @@
 			files = (
 				E3DEAE7F2389BC82007E2951 /* AppDelegate.swift in Sources */,
 				E3DEAE812389BC82007E2951 /* SceneDelegate.swift in Sources */,
+				E3860D2F2391BD33005E9B9B /* PlayerView.swift in Sources */,
+				E323CA67238ECF0C00D01CF1 /* DataManagement.swift in Sources */,
+				E3860D322391BD86005E9B9B /* Player.swift in Sources */,
 				E3DEAE832389BC82007E2951 /* ContentView.swift in Sources */,
+				E3F407CC238B749B00EB5A2D /* Sound.swift in Sources */,
+				E3F407CE238B74BE00EB5A2D /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
