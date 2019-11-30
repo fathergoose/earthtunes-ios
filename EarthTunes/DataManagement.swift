@@ -12,34 +12,6 @@ import AVKit
 let url = URL(fileURLWithPath: NSTemporaryDirectory().appending("sound.wav"))
 let ud = UserDefaults.standard
 
-/*
-func saveEvents(events: [Event]) {
-    let archivedObject = NSKeyedArchiver.archivedData(withRootObject: events as NSArray)
-    ud.set(archivedObject, forKey: "Events")
-    ud.synchronize()
-}
-
-func retrieveEvents() -> [Event]? {
-    if let unarchivedObject = ud.object(forKey: "Events") as? NSData {
-        return (NSKeyedUnarchiver.unarchiveObject(with: unarchivedObject as Data) as? [Event])!
-    }
-    return nil
-}
-
-func saveFavorites(events: [Event]) {
-    let archivedObject = NSKeyedArchiver.archivedData(withRootObject: events as NSArray)
-    ud.set(archivedObject, forKey: "Favorites")
-    ud.synchronize()
-}
-
-func retrieveFavorites() -> [Event]? {
-    if let unarchivedObject = ud.object(forKey: "Favorites") as? NSData {
-        return (NSKeyedUnarchiver.unarchiveObject(with: unarchivedObject as Data) as? [Event])!
-    }
-    return nil
-}
-*/
-
 func saveFile(samples: [Float64], sample_rate: Float64) throws {
 
     let outputFormatSettings = [

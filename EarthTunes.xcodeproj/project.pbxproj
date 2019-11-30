@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E323CA67238ECF0C00D01CF1 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E323CA66238ECF0C00D01CF1 /* DataManagement.swift */; };
+		E36A1B9923920DD300575DAB /* EventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A1B9823920DD300575DAB /* EventRequest.swift */; };
+		E36A1B9B239222E200575DAB /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A1B9A239222E200575DAB /* Event.swift */; };
+		E36A1B9D2392268600575DAB /* Sonification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A1B9C2392268600575DAB /* Sonification.swift */; };
 		E3860D2F2391BD33005E9B9B /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3860D2E2391BD33005E9B9B /* PlayerView.swift */; };
 		E3860D322391BD86005E9B9B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3860D312391BD86005E9B9B /* Player.swift */; };
 		E3DEAE7F2389BC82007E2951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAE7E2389BC82007E2951 /* AppDelegate.swift */; };
@@ -41,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		E323CA66238ECF0C00D01CF1 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
+		E36A1B9823920DD300575DAB /* EventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRequest.swift; sourceTree = "<group>"; };
+		E36A1B9A239222E200575DAB /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		E36A1B9C2392268600575DAB /* Sonification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sonification.swift; sourceTree = "<group>"; };
 		E3860D2E2391BD33005E9B9B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		E3860D312391BD86005E9B9B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		E3DEAE7B2389BC82007E2951 /* EarthTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E36A1B9723920DA600575DAB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E36A1B9823920DD300575DAB /* EventRequest.swift */,
+				E36A1B9A239222E200575DAB /* Event.swift */,
+				E36A1B9C2392268600575DAB /* Sonification.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E3860D302391BD6D005E9B9B /* Player */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +134,7 @@
 		E3DEAE7D2389BC82007E2951 /* EarthTunes */ = {
 			isa = PBXGroup;
 			children = (
+				E36A1B9723920DA600575DAB /* Models */,
 				E3860D302391BD6D005E9B9B /* Player */,
 				E3DEAE7E2389BC82007E2951 /* AppDelegate.swift */,
 				E3DEAE802389BC82007E2951 /* SceneDelegate.swift */,
@@ -291,9 +308,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3DEAE7F2389BC82007E2951 /* AppDelegate.swift in Sources */,
+				E36A1B9D2392268600575DAB /* Sonification.swift in Sources */,
 				E3DEAE812389BC82007E2951 /* SceneDelegate.swift in Sources */,
 				E3860D2F2391BD33005E9B9B /* PlayerView.swift in Sources */,
 				E323CA67238ECF0C00D01CF1 /* DataManagement.swift in Sources */,
+				E36A1B9B239222E200575DAB /* Event.swift in Sources */,
+				E36A1B9923920DD300575DAB /* EventRequest.swift in Sources */,
 				E3860D322391BD86005E9B9B /* Player.swift in Sources */,
 				E3DEAE832389BC82007E2951 /* ContentView.swift in Sources */,
 				E3F407CC238B749B00EB5A2D /* Sound.swift in Sources */,

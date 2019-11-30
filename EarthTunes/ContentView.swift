@@ -9,32 +9,9 @@
 import SwiftUI
 
 
-struct Todo: Codable, Identifiable {
-    let userId, id: Int
-    let title: String
-    let completed: Bool
-
-    enum CodingKeys: CodingKey {
-        case userId, id, title, completed
-    }
-}
-
-typealias Todos = [Todo]
-
-
 struct ContentView: View {
-    @ObservedObject var todoData: TodoDownloader = TodoDownloader()
-//
-//    var body: some View {
-//        NavigationView {
-//            List(self.todoData.todos) { todo in
-////                NavigationLink(destination: TodoDetail(todo: todo)) {
-//                    Text(todo.title)
-////                }
-//            }
-//        .navigationBarTitle(Text("To Do List"))
-//        }
-//    }
+    @ObservedObject var eventData: EventDownloader = EventDownloader()
+    
     var body: some View {
         Text("helo al")
     }
