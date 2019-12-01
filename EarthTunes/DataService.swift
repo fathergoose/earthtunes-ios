@@ -16,21 +16,30 @@ import CoreFoundation
 
 class EventDownloader: ObservableObject {
     @Published var sound: AVAudioPlayer?
-    
+    var request: EventRequest
     
     init() {
-        let request = EventRequest()
-        
+        let defaultStartTime = "2019-05-30T09:00:00"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        self.request = EventRequest(startTime: dateFormatter.date(from:defaultStartTime)!)
+    }
+    
+    
+    func getAndPlay() { 
         URLSession.shared.dataTask(with: request.url()!) { (data, response, error) in
             do {
                 guard let data = data else {return}
-                let seismicEvent = Event(responseData: data)
-                let sonification = Sonification(seismicSamples: seismicEvent.data)
+                let seismicEvent = SeismicEvent(eventRequest: self.request, responseData: data)
+                let sonification = Sonification(seismicEvent: seismicEvent)
                 
                 do {
+                    let rate = seismicEvent.sampleRate! * sonification.speedFactor
+                    print("rate: ", rate)
                     try saveFile(
                         samples: sonification.soundSamples,
-                        sample_rate: seismicEvent.sampleRate! * sonification.speedFactor
+                        sample_rate: rate
                     )
                 }
                 catch { print("Problems") }
@@ -40,6 +49,7 @@ class EventDownloader: ObservableObject {
                 
                 do {
                     sound = try AVAudioPlayer(contentsOf: url)
+                    print("sound: ", sound!)
                     sound?.play()
                 } catch {
                     // couldn't load file :(

@@ -13,7 +13,12 @@ struct ContentView: View {
     @ObservedObject var eventData: EventDownloader = EventDownloader()
     
     var body: some View {
-        Text("helo al")
+        Button(action: eventData.getAndPlay) {
+            Image(systemName: "triangle")
+                .imageScale(.large)
+                .accessibility(label: Text("Get Event"))
+                .padding()
+        }
     }
 }
 
