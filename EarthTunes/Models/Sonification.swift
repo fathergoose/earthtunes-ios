@@ -10,7 +10,7 @@ import Foundation
 
 struct Sonification {
     var event: SeismicEvent
-    var soundSamples: [Double]
+    var samples: [Double]
     var speedFactor: Double
 
     
@@ -24,12 +24,16 @@ struct Sonification {
 
         let multiplier = ex / halfPi
 
-        soundSamples = event.data.map{
+        samples = event.data.map{
             atan( ( $0 )/fixedAmp) * multiplier
         }
         
         for i in 0...10 {
-            print(soundSamples[i])
+            print(samples[i])
         }
+    }
+    
+    func sampleRate() -> Double {
+        return event.sampleRate! * speedFactor
     }
 }

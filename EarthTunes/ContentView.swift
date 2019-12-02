@@ -10,14 +10,21 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @ObservedObject var eventData: EventDownloader = EventDownloader()
+    @ObservedObject var downloader: EventDownloader = EventDownloader()
     
     var body: some View {
-        Button(action: eventData.getAndPlay) {
-            Image(systemName: "triangle")
-                .imageScale(.large)
-                .accessibility(label: Text("Get Event"))
-                .padding()
+        VStack {
+            Button(action: downloader.getAndSave) {
+                Image(systemName: "triangle")
+                    .imageScale(.large)
+                    .accessibility(label: Text("Get Event"))
+                    .padding()
+            }
+
+            Text(downloader.status)
+            if (downloader.soundFile != nil){
+                PlayerView(player: Player(source_url: downloader.soundFile!.url))
+            }
         }
     }
 }
