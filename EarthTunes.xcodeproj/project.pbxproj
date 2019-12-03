@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E30DDB952395B308001F8806 /* SoundFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DDB942395B308001F8806 /* SoundFile.swift */; };
+		E30DDB972395F395001F8806 /* SeismicStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DDB962395F395001F8806 /* SeismicStation.swift */; };
+		E30DDB992395FBD6001F8806 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DDB982395FBD6001F8806 /* AppData.swift */; };
 		E36A1B9923920DD300575DAB /* EventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A1B9823920DD300575DAB /* EventRequest.swift */; };
 		E36A1B9B239222E200575DAB /* SeismicEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A1B9A239222E200575DAB /* SeismicEvent.swift */; };
 		E36A1B9D2392268600575DAB /* Sonification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A1B9C2392268600575DAB /* Sonification.swift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		E30DDB942395B308001F8806 /* SoundFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFile.swift; sourceTree = "<group>"; };
+		E30DDB962395F395001F8806 /* SeismicStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeismicStation.swift; sourceTree = "<group>"; };
+		E30DDB982395FBD6001F8806 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		E36A1B9823920DD300575DAB /* EventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRequest.swift; sourceTree = "<group>"; };
 		E36A1B9A239222E200575DAB /* SeismicEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeismicEvent.swift; sourceTree = "<group>"; };
 		E36A1B9C2392268600575DAB /* Sonification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sonification.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 				E36A1B9A239222E200575DAB /* SeismicEvent.swift */,
 				E36A1B9C2392268600575DAB /* Sonification.swift */,
 				E30DDB942395B308001F8806 /* SoundFile.swift */,
+				E30DDB962395F395001F8806 /* SeismicStation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				E3DEAE892389BC83007E2951 /* LaunchScreen.storyboard */,
 				E36A1B9723920DA600575DAB /* Models */,
 				E3DEAE862389BC83007E2951 /* Preview Content */,
+				E30DDB982395FBD6001F8806 /* AppData.swift */,
 			);
 			path = EarthTunes;
 			sourceTree = "<group>";
@@ -303,9 +309,11 @@
 				E36A1B9B239222E200575DAB /* SeismicEvent.swift in Sources */,
 				E36A1B9923920DD300575DAB /* EventRequest.swift in Sources */,
 				E30DDB952395B308001F8806 /* SoundFile.swift in Sources */,
+				E30DDB992395FBD6001F8806 /* AppData.swift in Sources */,
 				E3860D322391BD86005E9B9B /* Player.swift in Sources */,
 				E3DEAE832389BC82007E2951 /* ContentView.swift in Sources */,
 				E3F407CE238B74BE00EB5A2D /* EventDownloader.swift in Sources */,
+				E30DDB972395F395001F8806 /* SeismicStation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

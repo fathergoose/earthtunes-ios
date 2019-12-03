@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+import UIKit
 
 struct ContentView: View {
     @ObservedObject var downloader: EventDownloader = EventDownloader()
@@ -21,12 +21,31 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            DatePicker(
-                "Start Time",
-                selection: $downloader.request.start,
-                in: dateRange,
-                displayedComponents: .date
-            )
+            Picker(selection: $downloader.request.stationIndex, label: Text("Station")) {
+                ForEach(0 ..< stationList.count) {
+                    Text(stationList[$0].displayName)
+                }
+            }
+            VStack {
+                DatePicker(
+                    "Start Date",
+                    selection: $downloader.request.startDate,
+                    in: dateRange,
+                    displayedComponents: .date
+                    )
+                DatePicker(
+                    "Start Time",
+                    selection: $downloader.request.startTime,
+                    in: dateRange,
+                    displayedComponents: .hourAndMinute
+                )
+                HStack {
+                    Text("Duration").bold()
+                    Divider()
+                    TextField("Duration", text: $downloader.request.duration).keyboardType(.numberPad)
+                }
+            }
+
 
             Button(action: downloader.getAndSave) {
                 Image(systemName: "triangle")
@@ -39,7 +58,7 @@ struct ContentView: View {
             if (downloader.soundFile != nil){
                 PlayerView(player: Player(source_url: downloader.soundFile!.url))
             }
-        }
+        }.padding()
     }
 }
 

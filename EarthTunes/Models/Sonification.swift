@@ -21,15 +21,10 @@ struct Sonification {
         let fixedAmp: Double = 5e-5
         speedFactor = 800
         let ex = pow(2.0, 31.0)
-
         let multiplier = ex / halfPi
 
         samples = event.data.map{
             atan( ( $0 )/fixedAmp) * multiplier
-        }
-        
-        for i in 0...10 {
-            print(samples[i])
         }
     }
     
