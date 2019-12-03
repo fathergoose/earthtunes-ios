@@ -9,6 +9,15 @@
 import Foundation
 
 struct SeismicStation : Hashable {
-    var id: String
+    var networkCode: String
+    var stationCode: String
+    var locationCode: String?
+    var channel: Channels = Channels.HHZ
     var displayName: String
+}
+
+
+enum Channels: String {
+    case HHZ
+    case BHZ
 }

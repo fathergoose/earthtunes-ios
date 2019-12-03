@@ -47,7 +47,7 @@ class EventRequest {
         components.path = "/irisws/timeseries/1/query"
         components.queryItems = [
             URLQueryItem(name: "net", value: self.net),
-            URLQueryItem(name: "sta", value: stationList[self.stationIndex].id),
+            URLQueryItem(name: "sta", value: stationList[self.stationIndex].networkCode),
             URLQueryItem(name: "loc", value: self.location),
             URLQueryItem(name: "cha", value: self.channel),
             URLQueryItem(name: "starttime", value: self.startDateTimeString()),

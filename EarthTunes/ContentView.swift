@@ -32,7 +32,7 @@ struct ContentView: View {
                     selection: $downloader.request.startDate,
                     in: dateRange,
                     displayedComponents: .date
-                    )
+                )
                 DatePicker(
                     "Start Time",
                     selection: $downloader.request.startTime,
