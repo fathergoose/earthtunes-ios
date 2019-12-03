@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct EventRequest {
+class EventRequest {
     private var components = URLComponents()
 
     var net: String = "NW"
@@ -16,21 +16,28 @@ struct EventRequest {
     var location: String = "00"
     var channel: String = "HHZ"
     var start: Date = Date()
-    //var start: String = "2019-05-30T09:00:00"
     var duration: String = "7200"
     
     
-    let demean: String = "true"
-    let scale: String = "auto"
-    let output: String = "ascii1"
+    var demean: String = "true"
+    var scale: String = "auto"
+    var output: String = "ascii1"
     
     
+    func startTimeString() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        let startTimeString = formatter.string(from: self.start)
+        return startTimeString
+    }
     
-    init(startTime: Date?) {
-        if let startTime = startTime {
-            self.start = startTime
-        }
-        
+    func url() -> URL? {
+        self.build()
+        return self.components.url
+    }
+    
+    private func build() -> Void {
+        components = URLComponents()
         components.scheme = "https"
         components.host = "service.iris.edu"
         components.path = "/irisws/timeseries/1/query"
@@ -45,16 +52,6 @@ struct EventRequest {
             URLQueryItem(name: "scale", value: self.scale),
             URLQueryItem(name: "output", value: self.output)
         ]
-    }
-    func startTimeString() -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-        let startTimeString = formatter.string(from: self.start)
-        return startTimeString
-    }
-    
-    func url() -> URL? {
-        return self.components.url
     }
 
 }

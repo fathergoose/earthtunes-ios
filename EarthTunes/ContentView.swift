@@ -12,8 +12,22 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var downloader: EventDownloader = EventDownloader()
     
+    var dateRange: ClosedRange<Date> {
+        let min = Calendar.current.date(byAdding: .year, value: -5, to: Date())!
+        let max = Date()
+        return min...max
+    }
+
+    
     var body: some View {
         VStack {
+            DatePicker(
+                "Start Time",
+                selection: $downloader.request.start,
+                in: dateRange,
+                displayedComponents: .date
+            )
+
             Button(action: downloader.getAndSave) {
                 Image(systemName: "triangle")
                     .imageScale(.large)

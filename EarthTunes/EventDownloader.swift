@@ -17,15 +17,7 @@ import CoreFoundation
 class EventDownloader: ObservableObject {
     var soundFile: SoundFile?
     @Published var status = "unsent"
-    var request: EventRequest
-    
-    init() {
-        let defaultStartTime = "2019-05-30T09:00:00"
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        self.request = EventRequest(startTime: dateFormatter.date(from:defaultStartTime)!)
-    }
+    var request = EventRequest()
     
     
     func getAndSave() {
@@ -47,37 +39,13 @@ class EventDownloader: ObservableObject {
                     self.status = "sonified"
                 }
                 self.soundFile = SoundFile(sonification: sonification)
-
-
-                
                 do {
                     try self.soundFile!.saveFile()
                     DispatchQueue.main.async {
                         self.status = "saved"
                     }
-                    
                 }
                 catch { print("Problems") }
-
-//                var sound: AVAudioPlayer?
-//
-//                do {
-//                    sound = try AVAudioPlayer(contentsOf: self.soundFile!.url)
-//                    print("sound: ", sound!)
-//                    sound?.play()
-//                    DispatchQueue.main.async {
-//                        self.status = "playing"
-//
-//                    }
-//                } catch {
-//                    // couldn't load file :(
-//                }
-//
-//                DispatchQueue.main.async {
-//                    self.soundFile = sound
-//                }
-            } catch {
-                print("Error decoding JSON: ", error)
             }
         }.resume()
     }
