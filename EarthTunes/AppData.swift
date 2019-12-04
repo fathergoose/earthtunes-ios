@@ -9,19 +9,19 @@
 import Foundation
 
 let stationList: [SeismicStation] = [
-//    SeismicStation(networkCode: "TA", stationCode: "L44A", locationCode: nil, displayName: "Ryerson"), // < Feb '19
-//    SeismicStation(networkCode: "NW", stationCode: "L44A", locationCode: nil, channel: Channels.HHZ, displayName: "Ryerson"), // > Feb '19
-    SeismicStation(networkCode: "JP", stationCode: "JOW", locationCode: nil, displayName: "JP-JOW"),
-    SeismicStation(networkCode: "GT", stationCode: "VNDA", locationCode: "00", displayName: "GT-VNDA"),
-    SeismicStation(networkCode: "GE", stationCode: "SNAA", locationCode: nil, displayName: "GE-SNAA"),
+//  SeismicStation(networkCode: "TA", stationCode: "L44A", locationCode: nil, displayName: "Ryerson"), // < Feb '19
+//  SeismicStation(networkCode: "NW", stationCode: "L44A", locationCode: nil, channel: Channels.HHZ, displayName: "Ryerson"), // > Feb '19
+    SeismicStation(networkCode: "JP", stationCode: "JOW", locationCode: "--", channel: Channels.BHZ, displayName: "JP-JOW"),
+    SeismicStation(networkCode: "GT", stationCode: "VNDA", locationCode: "00", channel: Channels.BHZ, displayName: "GT-VNDA"),
+    SeismicStation(networkCode: "GE", stationCode: "SNAA", locationCode: "--", channel: Channels.BHZ, displayName: "GE-SNAA"),
     SeismicStation(networkCode: "NZ", stationCode: "KHZ", locationCode: "10", channel: Channels.HHZ, displayName: "NZ-KHZ"),
-    SeismicStation(networkCode: "IU", stationCode: "PAB", locationCode: "00", displayName: "IU-PAB"),
+    SeismicStation(networkCode: "IU", stationCode: "PAB", locationCode: "00", channel: Channels.BHZ, displayName: "IU-PAB"),
     SeismicStation(networkCode: "IC", stationCode: "QIZ", locationCode: "10", channel: Channels.HHZ, displayName: "IC-QIZ"),
-    SeismicStation(networkCode: "IU", stationCode: "LSZ", locationCode: "10", displayName: "IU-LSZ"),
-    SeismicStation(networkCode: "II", stationCode: "PFO", locationCode: "10", displayName: "II-PFO"),
-    SeismicStation(networkCode: "II", stationCode: "MSEY", locationCode: "10", displayName: "II-MSEY"),
-    SeismicStation(networkCode: "CN", stationCode: "GAC", locationCode: nil, displayName: "CN-GAC"),
-    SeismicStation(networkCode: "IU", stationCode: "CASY", locationCode: "10", displayName: "Iu-CASY")
+    SeismicStation(networkCode: "IU", stationCode: "LSZ", locationCode: "10", channel: Channels.BHZ, displayName: "IU-LSZ"),
+    SeismicStation(networkCode: "II", stationCode: "PFO", locationCode: "10", channel: Channels.BHZ, displayName: "II-PFO"),
+    SeismicStation(networkCode: "II", stationCode: "MSEY", locationCode: "10", channel: Channels.BHZ, displayName: "II-MSEY"),
+    SeismicStation(networkCode: "CN", stationCode: "GAC", locationCode: "--", channel: Channels.BHZ, displayName: "CN-GAC"),
+    SeismicStation(networkCode: "IU", stationCode: "CASY", locationCode: "10", channel: Channels.BHZ, displayName: "Iu-CASY")
 ]
 
 

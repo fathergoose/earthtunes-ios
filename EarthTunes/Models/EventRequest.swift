@@ -10,11 +10,8 @@ import Foundation
 
 class EventRequest {
     private var components = URLComponents()
+    var stationIndex = 0
 
-    var net: String = "NW"
-    var stationIndex: Int = 0
-    var location: String = "00"
-    var channel: String = "HHZ"
     var startDate: Date = Date()
     var startTime: Date = Date()
     var duration: String = "7200"
@@ -37,25 +34,30 @@ class EventRequest {
     
     func url() -> URL? {
         self.build()
+        print("ComponentURL: ", self.components.url!)
         return self.components.url
     }
     
     private func build() -> Void {
+        let station = stationList[stationIndex]
         components = URLComponents()
         components.scheme = "https"
         components.host = "service.iris.edu"
         components.path = "/irisws/timeseries/1/query"
         components.queryItems = [
-            URLQueryItem(name: "net", value: self.net),
-            URLQueryItem(name: "sta", value: stationList[self.stationIndex].networkCode),
-            URLQueryItem(name: "loc", value: self.location),
-            URLQueryItem(name: "cha", value: self.channel),
+            URLQueryItem(name: "net", value: station.networkCode),
+            URLQueryItem(name: "sta", value: station.stationCode),
+            URLQueryItem(name: "cha", value: station.channel.rawValue),
             URLQueryItem(name: "starttime", value: self.startDateTimeString()),
             URLQueryItem(name: "duration", value: self.duration),
             URLQueryItem(name: "demean", value: self.demean),
             URLQueryItem(name: "scale", value: self.scale),
             URLQueryItem(name: "output", value: self.output)
         ]
+        if (station.locationCode != nil) {
+            components.queryItems?.append(URLQueryItem(name: "loc", value: station.locationCode)
+            )
+        }
     }
 
 }

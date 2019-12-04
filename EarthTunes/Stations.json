@@ -1,0 +1,80 @@
+[
+  {
+    "network": "JP",
+    "station": "JOW",
+    "location": "",
+    "channel": "BHZ"
+  },
+  {
+    "network": "GT",
+    "station": "VNDA",
+    "location": "00",
+    "channel": "BHZ"
+  },
+  {
+    "network": "GE",
+    "station": "SNAA",
+    "location": "",
+    "channel": "BHZ"
+  },
+  {
+    "network": "NZ",
+    "station": "KHZ",
+    "location": 10,
+    "channel": "HHZ"
+  },
+  {
+    "network": "IU",
+    "station": "PAB",
+    "location": "00",
+    "channel": "BHZ"
+  },
+  {
+    "network": "IC",
+    "station": "QIZ",
+    "location": 10,
+    "channel": "HHZ"
+  },
+  {
+    "network": "IU",
+    "station": "LSZ",
+    "location": 10,
+    "channel": "BHZ"
+  },
+  {
+    "network": "II",
+    "station": "PFO",
+    "location": 10,
+    "channel": "BHZ"
+  },
+  {
+    "network": "II",
+    "station": "MSEY",
+    "location": 10,
+    "channel": "BHZ"
+  },
+  {
+    "network": "CN",
+    "station": "GAC",
+    "location": "",
+    "channel": "BHZ"
+  },
+  {
+    "network": "IU",
+    "station": "CASY",
+    "location": 10,
+    "channel": "BHZ"
+  },
+  {
+    "network": "TA",
+    "station": "L44A",
+    "location": "",
+    "channel": "BHZ"
+  },
+  {
+    "network": "NW",
+    "station": "L44A",
+    "location": "00",
+    "channel": "HHZ"
+  }
+]

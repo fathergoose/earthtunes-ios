@@ -11,8 +11,8 @@ import Foundation
 struct SeismicStation : Hashable {
     var networkCode: String
     var stationCode: String
-    var locationCode: String?
-    var channel: Channels = Channels.HHZ
+    var locationCode: String
+    var channel: Channels
     var displayName: String
 }
 
