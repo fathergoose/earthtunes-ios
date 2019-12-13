@@ -13,7 +13,6 @@ struct SeismicStation : Hashable {
     var stationCode: String
     var locationCode: String
     var channel: Channels
-    var displayName: String
 }
 
 

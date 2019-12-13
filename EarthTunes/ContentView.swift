@@ -13,7 +13,7 @@ struct ContentView: View {
     @ObservedObject var downloader: EventDownloader = EventDownloader()
     
     var dateRange: ClosedRange<Date> {
-        let min = Calendar.current.date(byAdding: .year, value: -5, to: Date())!
+        let min = Calendar.current.date(byAdding: .year, value: -20, to: Date())!
         let max = Date()
         return min...max
     }
@@ -22,8 +22,8 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Picker(selection: $downloader.request.stationIndex, label: Text("Station")) {
-                ForEach(0 ..< stationList.count) {
-                    Text(stationList[$0].displayName)
+                ForEach(0 ..< appLocations.count) {
+                    Text(appLocations[$0].name)
                 }
             }
             VStack {

@@ -14,6 +14,7 @@
 		E36A1B9923920DD300575DAB /* EventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A1B9823920DD300575DAB /* EventRequest.swift */; };
 		E36A1B9B239222E200575DAB /* SeismicEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A1B9A239222E200575DAB /* SeismicEvent.swift */; };
 		E36A1B9D2392268600575DAB /* Sonification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A1B9C2392268600575DAB /* Sonification.swift */; };
+		E37156FF23A4485100603EFF /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37156FE23A4485100603EFF /* Location.swift */; };
 		E3860D2F2391BD33005E9B9B /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3860D2E2391BD33005E9B9B /* PlayerView.swift */; };
 		E3860D322391BD86005E9B9B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3860D312391BD86005E9B9B /* Player.swift */; };
 		E3DEAE7F2389BC82007E2951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEAE7E2389BC82007E2951 /* AppDelegate.swift */; };
@@ -52,6 +53,7 @@
 		E36A1B9823920DD300575DAB /* EventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRequest.swift; sourceTree = "<group>"; };
 		E36A1B9A239222E200575DAB /* SeismicEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeismicEvent.swift; sourceTree = "<group>"; };
 		E36A1B9C2392268600575DAB /* Sonification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sonification.swift; sourceTree = "<group>"; };
+		E37156FE23A4485100603EFF /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E3860D2E2391BD33005E9B9B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		E3860D312391BD86005E9B9B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		E3DEAE7B2389BC82007E2951 /* EarthTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 				E36A1B9C2392268600575DAB /* Sonification.swift */,
 				E30DDB942395B308001F8806 /* SoundFile.swift */,
 				E30DDB962395F395001F8806 /* SeismicStation.swift */,
+				E37156FE23A4485100603EFF /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				E3860D2F2391BD33005E9B9B /* PlayerView.swift in Sources */,
 				E36A1B9B239222E200575DAB /* SeismicEvent.swift in Sources */,
 				E36A1B9923920DD300575DAB /* EventRequest.swift in Sources */,
+				E37156FF23A4485100603EFF /* Location.swift in Sources */,
 				E30DDB952395B308001F8806 /* SoundFile.swift in Sources */,
 				E30DDB992395FBD6001F8806 /* AppData.swift in Sources */,
 				E3860D322391BD86005E9B9B /* Player.swift in Sources */,

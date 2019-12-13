@@ -7,25 +7,161 @@
 //
 
 import Foundation
-
-let stationList: [SeismicStation] = [
-//  SeismicStation(networkCode: "TA", stationCode: "L44A", locationCode: nil, displayName: "Ryerson"), // < Feb '19
-//  SeismicStation(networkCode: "NW", stationCode: "L44A", locationCode: nil, channel: Channels.HHZ, displayName: "Ryerson"), // > Feb '19
-    SeismicStation(networkCode: "JP", stationCode: "JOW", locationCode: "--", channel: Channels.BHZ, displayName: "JP-JOW"),
-    SeismicStation(networkCode: "GT", stationCode: "VNDA", locationCode: "00", channel: Channels.BHZ, displayName: "GT-VNDA"),
-    SeismicStation(networkCode: "GE", stationCode: "SNAA", locationCode: "--", channel: Channels.BHZ, displayName: "GE-SNAA"),
-    SeismicStation(networkCode: "NZ", stationCode: "KHZ", locationCode: "10", channel: Channels.HHZ, displayName: "NZ-KHZ"),
-    SeismicStation(networkCode: "IU", stationCode: "PAB", locationCode: "00", channel: Channels.BHZ, displayName: "IU-PAB"),
-    SeismicStation(networkCode: "IC", stationCode: "QIZ", locationCode: "10", channel: Channels.HHZ, displayName: "IC-QIZ"),
-    SeismicStation(networkCode: "IU", stationCode: "LSZ", locationCode: "10", channel: Channels.BHZ, displayName: "IU-LSZ"),
-    SeismicStation(networkCode: "II", stationCode: "PFO", locationCode: "10", channel: Channels.BHZ, displayName: "II-PFO"),
-    SeismicStation(networkCode: "II", stationCode: "MSEY", locationCode: "10", channel: Channels.BHZ, displayName: "II-MSEY"),
-    SeismicStation(networkCode: "CN", stationCode: "GAC", locationCode: "--", channel: Channels.BHZ, displayName: "CN-GAC"),
-    SeismicStation(networkCode: "IU", stationCode: "CASY", locationCode: "10", channel: Channels.BHZ, displayName: "Iu-CASY")
+let twentyYearsAgo = Calendar.current.date(byAdding: .year, value: -20, to: Date())!
+let last20Years = DateInterval(start: twentyYearsAgo, end: Date())
+let appLocations: [Location] = [
+    Location(
+        name: "JP-JOW",
+        stations: [
+            last20Years: SeismicStation(
+                networkCode: "JP",
+                stationCode: "JOW",
+                locationCode: "--",
+                channel: Channels.BHZ
+        )
+    ]),
+    Location(
+        name: "GT-VNDA",
+        stations: [
+            last20Years: SeismicStation(
+                networkCode: "GT",
+                stationCode: "VNDA",
+                locationCode: "00",
+                channel: Channels.BHZ
+        )
+    ]),
+    Location(
+        name: "GE_SNAA",
+        stations: [
+            last20Years: SeismicStation(
+                networkCode: "GE",
+                stationCode: "SNAA",
+                locationCode: "--",
+                channel: Channels.BHZ
+        )
+    ]),
+    Location(
+        name: "NZ-KHZ",
+        stations: [
+            last20Years: SeismicStation(
+                networkCode: "NZ",
+                stationCode: "KHZ",
+                locationCode: "10",
+                channel: Channels.HHZ
+        )
+    ]),
+    Location(
+        name: "San Pablo, Spain",
+        stations: [
+            last20Years: SeismicStation(
+                networkCode: "IU",
+                stationCode: "PAB",
+                locationCode: "00",
+                channel: Channels.BHZ
+        )
+    ]),
+    Location(
+        name: "Qiongzhong, Hainan, China",
+        stations: [
+            last20Years: SeismicStation(
+                networkCode: "IC",
+                stationCode: "QIZ",
+                locationCode: "10",
+                channel: Channels.HHZ
+        )
+    ]),
+    Location(
+        name: "Lusaka Zambia",
+        stations: [
+            last20Years: SeismicStation(
+                networkCode: "IU",
+                stationCode: "LSZ",
+                locationCode: "10",
+                channel: Channels.BHZ
+        )
+    ]),
+    Location(
+        name: "Pinon Flat, California, USA",
+        stations: [
+            last20Years: SeismicStation(
+                networkCode: "II",
+                stationCode: "PFO",
+                locationCode: "10",
+                channel: Channels.BHZ
+        )
+    ]),
+    Location(
+        name: "Mahe, Seychelles",
+        stations: [
+            last20Years: SeismicStation(
+                networkCode: "II",
+                stationCode: "MSEY",
+                locationCode: "10",
+                channel: Channels.BHZ
+        )
+    ]),
+    Location(
+        name: "Glen Almond, Quebec, Canada",
+        stations: [
+            last20Years: SeismicStation(
+                networkCode: "CN",
+                stationCode: "GAC",
+                locationCode: "--",
+                channel: Channels.BHZ
+        )
+    ]),
+    Location(
+        name: "Mahe, Seychelles",
+        stations: [
+            last20Years: SeismicStation(
+                networkCode: "II",
+                stationCode: "MSEY",
+                locationCode: "10",
+                channel: Channels.BHZ
+        )
+    ]),
+    Location(
+        name: "Casey, Antarctica",
+        stations: [
+            last20Years: SeismicStation(
+                networkCode: "IU",
+                stationCode: "CASY",
+                locationCode: "10",
+                channel: Channels.BHZ
+        )
+    ]),
+    Location(
+        name: "Greyslake, IL",
+        stations: [
+            DateInterval(start: twentyYearsAgo, end: dateFromString("2019-02-01")): SeismicStation(
+                networkCode: "TA",
+                stationCode: "L44A",
+                locationCode: "--",
+                channel: Channels.BHZ
+            ),
+            DateInterval(start: dateFromString("2019-02-01"), end: Date()): SeismicStation(
+                networkCode: "NW",
+                stationCode: "L44A",
+                locationCode: "00",
+                channel: Channels.HHZ
+            )
+    ])
 ]
 
 
+func dateFromString(_ str: String) -> Date {
+    let dateFormat = "yyyy-MM-dd"
 
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = dateFormat
+
+    return dateFormatter.date(from: str)!
+}
+
+
+
+//  SeismicStation(networkCode: "TA", stationCode: "L44A", locationCode: nil, channel: Channels.BHZ, displayName: "Greyslake, IL"), // < Feb '19
+//  SeismicStation(networkCode: "NW", stationCode: "L44A", locationCode: nil, channel: Channels.HHZ, displayName: "Greyslake, IL"), // > Feb '19
 
 /*
  Finding 10 stations was much harder than I thought primarily because stations get upgrades that change the channel or location codes, or they do not have continuous data for a decent time period (at least a decade).  Here is a list that will work:

@@ -35,6 +35,7 @@ struct SoundFile {
 
         var audioFile: AVAudioFile
         do {
+            print("url: \(self.url)")
             audioFile = try AVAudioFile(
                 forWriting: self.url,
                 settings: outputFormatSettings,

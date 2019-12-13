@@ -19,12 +19,10 @@ struct SeismicEvent {
     init(eventRequest: EventRequest, responseData: Data) {
         request = eventRequest
         print(request.url()!.absoluteString)
-        
         let responseString = String(data: responseData, encoding: String.Encoding.utf8)
-        print("RESPONSE: ", responseString!)
-
         var responseLines = responseString!.split { $0.isNewline }
         let metadata = responseLines[0]
+        print(metadata)
         responseLines.removeFirst()
         responseLines.removeLast()
         

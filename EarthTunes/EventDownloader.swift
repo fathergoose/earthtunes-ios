@@ -27,6 +27,9 @@ class EventDownloader: ObservableObject {
                 DispatchQueue.main.async {
                     self.status = "received"
                 }
+                if (error != nil) {
+                    print(error)
+                }
                 guard let data = data else {return}
                 let seismicEvent = SeismicEvent(eventRequest: self.request, responseData: data)
                 
