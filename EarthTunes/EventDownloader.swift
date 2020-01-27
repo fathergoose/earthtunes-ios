@@ -18,6 +18,7 @@ class EventDownloader: ObservableObject {
     var soundFile: SoundFile?
     @Published var status = "unsent"
     var request = EventRequest()
+    var sonificationParams = SonificationParams()
     
     
     func getAndSave() {
@@ -36,7 +37,7 @@ class EventDownloader: ObservableObject {
                 DispatchQueue.main.async {
                     self.status = "parsed"
                 }
-                let sonification = Sonification(seismicEvent: seismicEvent)
+                let sonification = Sonification(seismicEvent: seismicEvent, parameters: self.sonificationParams)
                 
                 DispatchQueue.main.async {
                     self.status = "sonified"
