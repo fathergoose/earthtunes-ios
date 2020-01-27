@@ -10,6 +10,7 @@
 		E30799B523DE8AA00075DC07 /* DateAndTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30799B423DE8AA00075DC07 /* DateAndTimeView.swift */; };
 		E30799B823DE8FA10075DC07 /* SonificationParamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30799B723DE8FA10075DC07 /* SonificationParamsView.swift */; };
 		E30799BA23DE93080075DC07 /* StationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30799B923DE93080075DC07 /* StationView.swift */; };
+		E30799BC23DE9F860075DC07 /* EventParamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30799BB23DE9F860075DC07 /* EventParamsView.swift */; };
 		E30DDB952395B308001F8806 /* SoundFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DDB942395B308001F8806 /* SoundFile.swift */; };
 		E30DDB972395F395001F8806 /* SeismicStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DDB962395F395001F8806 /* SeismicStation.swift */; };
 		E30DDB992395FBD6001F8806 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DDB982395FBD6001F8806 /* AppData.swift */; };
@@ -53,6 +54,7 @@
 		E30799B423DE8AA00075DC07 /* DateAndTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimeView.swift; sourceTree = "<group>"; };
 		E30799B723DE8FA10075DC07 /* SonificationParamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonificationParamsView.swift; sourceTree = "<group>"; };
 		E30799B923DE93080075DC07 /* StationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationView.swift; sourceTree = "<group>"; };
+		E30799BB23DE9F860075DC07 /* EventParamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventParamsView.swift; sourceTree = "<group>"; };
 		E30DDB942395B308001F8806 /* SoundFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFile.swift; sourceTree = "<group>"; };
 		E30DDB962395F395001F8806 /* SeismicStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeismicStation.swift; sourceTree = "<group>"; };
 		E30DDB982395FBD6001F8806 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				E30799B423DE8AA00075DC07 /* DateAndTimeView.swift */,
 				E30799B723DE8FA10075DC07 /* SonificationParamsView.swift */,
 				E30799B923DE93080075DC07 /* StationView.swift */,
+				E30799BB23DE9F860075DC07 /* EventParamsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				E36A1B9D2392268600575DAB /* Sonification.swift in Sources */,
 				E3DEAE812389BC82007E2951 /* SceneDelegate.swift in Sources */,
 				E3860D2F2391BD33005E9B9B /* PlayerView.swift in Sources */,
+				E30799BC23DE9F860075DC07 /* EventParamsView.swift in Sources */,
 				E36A1B9B239222E200575DAB /* SeismicEvent.swift in Sources */,
 				E36A1B9923920DD300575DAB /* EventRequest.swift in Sources */,
 				E37156FF23A4485100603EFF /* Location.swift in Sources */,

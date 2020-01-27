@@ -21,20 +21,7 @@ struct ContentView: View {
             VStack () {
                 Text("Earthtunes").font(.title)
                 VStack (alignment: .leading) {
-                    StationView(downloader: downloader)
-                    
-                    DateAndTimeView(downloader: downloader)
-                    
-                    HStack {
-                        Text("Duration").bold()
-                        Divider()
-                        TextField("Duration", text: $downloader.request.duration)
-                            .keyboardType(.numberPad)
-                            .fixedSize()
-                            .multilineTextAlignment(.trailing)
-                        Text("seconds")
-                    }.padding()
-                    
+                    EventParamsView(downloader: downloader)
                     SonificationParamsView(downloader: downloader)
                 }
                 Button(action: downloader.getAndSave) {
