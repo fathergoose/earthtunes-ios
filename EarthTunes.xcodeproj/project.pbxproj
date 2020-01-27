@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E30799B523DE8AA00075DC07 /* DateAndTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30799B423DE8AA00075DC07 /* DateAndTimeView.swift */; };
 		E30799B823DE8FA10075DC07 /* SonificationParamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30799B723DE8FA10075DC07 /* SonificationParamsView.swift */; };
+		E30799BA23DE93080075DC07 /* StationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30799B923DE93080075DC07 /* StationView.swift */; };
 		E30DDB952395B308001F8806 /* SoundFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DDB942395B308001F8806 /* SoundFile.swift */; };
 		E30DDB972395F395001F8806 /* SeismicStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DDB962395F395001F8806 /* SeismicStation.swift */; };
 		E30DDB992395FBD6001F8806 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DDB982395FBD6001F8806 /* AppData.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		E30799B423DE8AA00075DC07 /* DateAndTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimeView.swift; sourceTree = "<group>"; };
 		E30799B723DE8FA10075DC07 /* SonificationParamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonificationParamsView.swift; sourceTree = "<group>"; };
+		E30799B923DE93080075DC07 /* StationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationView.swift; sourceTree = "<group>"; };
 		E30DDB942395B308001F8806 /* SoundFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFile.swift; sourceTree = "<group>"; };
 		E30DDB962395F395001F8806 /* SeismicStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeismicStation.swift; sourceTree = "<group>"; };
 		E30DDB982395FBD6001F8806 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				E3DEAE822389BC82007E2951 /* ContentView.swift */,
 				E30799B423DE8AA00075DC07 /* DateAndTimeView.swift */,
 				E30799B723DE8FA10075DC07 /* SonificationParamsView.swift */,
+				E30799B923DE93080075DC07 /* StationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				E37156FF23A4485100603EFF /* Location.swift in Sources */,
 				E30DDB952395B308001F8806 /* SoundFile.swift in Sources */,
 				E30799B823DE8FA10075DC07 /* SonificationParamsView.swift in Sources */,
+				E30799BA23DE93080075DC07 /* StationView.swift in Sources */,
 				E30DDB992395FBD6001F8806 /* AppData.swift in Sources */,
 				E3860D322391BD86005E9B9B /* Player.swift in Sources */,
 				E3DEAE832389BC82007E2951 /* ContentView.swift in Sources */,

@@ -11,6 +11,7 @@ import UIKit
 
 struct ContentView: View {
     @ObservedObject var downloader: EventDownloader = EventDownloader()
+    
 
     
     
@@ -20,21 +21,19 @@ struct ContentView: View {
             VStack () {
                 Text("Earthtunes").font(.title)
                 VStack (alignment: .leading) {
-                    Text("Station").font(.headline).padding(25)
-                    Picker(selection: $downloader.request.stationIndex, label: Text("")) {
-                        ForEach(0 ..< appLocations.count) {
-                            Text(appLocations[$0].name)
-                        }
-                    }.padding()
-                    
+                    StationView(downloader: downloader)
                     
                     DateAndTimeView(downloader: downloader)
                     
                     HStack {
                         Text("Duration").bold()
                         Divider()
-                        TextField("Duration", text: $downloader.request.duration).keyboardType(.numberPad)
-                    }.padding(25)
+                        TextField("Duration", text: $downloader.request.duration)
+                            .keyboardType(.numberPad)
+                            .fixedSize()
+                            .multilineTextAlignment(.trailing)
+                        Text("seconds")
+                    }.padding()
                     
                     SonificationParamsView(downloader: downloader)
                 }

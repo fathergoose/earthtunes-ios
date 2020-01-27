@@ -33,13 +33,11 @@ struct DateAndTimeView: View {
     
     var body: some View {
         VStack (alignment: .leading){
-            Text("Date and Time").font(.headline).padding(25)
+            Text("Date and Time").font(.headline).padding()
             HStack {
-                if (displayDatePicker) {
-                    Text("Event Start Date").padding()
-                } else {
+
                     Text(dateString(downloader.request.startDate)).padding()
-                }
+                
                 Spacer()
                 Button(action: {
                     withAnimation {
@@ -58,18 +56,14 @@ struct DateAndTimeView: View {
             
             if (displayDatePicker) {
                 DatePicker(
-                    "",
+                    "Event Start Date",
                     selection: $downloader.request.startDate,
                     in: dateRange,
                     displayedComponents: .date
-                )
+                ).labelsHidden()
             }
             HStack {
-                if (displayTimePicker) {
-                    Text("Event Start Time").padding()
-                } else {
-                    Text(timeString(downloader.request.startTime)).padding()
-                }
+                Text(timeString(downloader.request.startTime)).padding()
                 Spacer()
                 Button(action: {
                     withAnimation {
@@ -87,18 +81,18 @@ struct DateAndTimeView: View {
             .padding()
             if (displayTimePicker) {
                 DatePicker(
-                    "",
+                    "Event Start Time",
                     selection: $downloader.request.startTime,
                     in: dateRange,
                     displayedComponents: .hourAndMinute
-                )
+                ).labelsHidden()
             }
         }
     }
 }
 
-//struct DateAndTimeView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DateAndTimeView()
-//    }
-//}
+struct DateAndTimeView_Previews: PreviewProvider {
+    static var previews: some View {
+        DateAndTimeView(downloader: EventDownloader())
+    }
+}
