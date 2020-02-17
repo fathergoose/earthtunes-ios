@@ -10,17 +10,41 @@ import Foundation
 import AVKit
 
 
-struct SoundFile {
-    var url: URL
+class SoundFile {
+    var tempURL: URL
+    var exportURL: URL?
     var sonification: Sonification
     
     init(sonification: Sonification) {
-        url = URL(fileURLWithPath: NSTemporaryDirectory().appending("sound.wav"))
         self.sonification = sonification
+        let req = sonification.event.request
+        let filename = "\(appLocations[req.stationIndex].name)-\(req.startDateTimeURLFriendlyString()).wav"
+        tempURL = URL(fileURLWithPath: NSTemporaryDirectory().appending(filename))
+    }
+    // url format = station-start-duration-amplitude-speed.wav
+    
+    func documentsDirectoryURL() -> String
+    {
+        return NSSearchPathForDirectoriesInDomains(.documentDirectory,
+        .userDomainMask,
+        true)[0]
     }
 
-
-    func saveFile() throws {
+    func saveExportFile() {
+        let destUrl = URL(fileURLWithPath: documentsDirectoryURL().appending("/\(tempURL.lastPathComponent)"))
+        do {
+            try FileManager.default.copyItem(at: tempURL, to: destUrl)
+            exportURL = destUrl
+            print("no error")
+        } catch {
+            print("ERROR################")
+            print(error)
+            print("TEMPURL#################")
+            print(tempURL.absoluteString)
+        }
+    }
+    
+    func saveTempFile() throws {
         let samples = sonification.samples
         let sample_rate = sonification.sampleRate()
 
@@ -35,9 +59,9 @@ struct SoundFile {
 
         var audioFile: AVAudioFile
         do {
-            print("url: \(self.url)")
+            print("url: \(self.tempURL)")
             audioFile = try AVAudioFile(
-                forWriting: self.url,
+                forWriting: self.tempURL,
                 settings: outputFormatSettings,
                 commonFormat: AVAudioCommonFormat.pcmFormatInt32,
                 interleaved: false

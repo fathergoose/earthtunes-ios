@@ -12,31 +12,47 @@ import UIKit
 struct ContentView: View {
     @ObservedObject var downloader: EventDownloader = EventDownloader()
     
-
+    
     
     
     
     var body: some View {
-        ScrollView() {
-            VStack () {
-                Text("Earthtunes").font(.title)
-                VStack (alignment: .leading) {
-                    EventParamsView(downloader: downloader)
-                    SonificationParamsView(downloader: downloader)
+        NavigationView {
+            ScrollView() {
+                VStack () {
+                    Text("Earthtunes").font(.title)
+                    VStack (alignment: .leading) {
+                        Text("Seismic Event").font(.headline)
+                        EventParamsView(downloader: downloader)
+                        SonificationParamsView(downloader: downloader)
+                    }
+                    Button(action: downloader.getAndSave) {
+                        Image(systemName: "triangle")
+                            .imageScale(.large)
+                            .accessibility(label: Text("Get Event"))
+                            .padding()
+                    }
+                    
+                    Text(downloader.status)
+                    
+                    NavigationLink(destination: SavedAudio()) {
+                        Text("Go Files")
+                    }
+                    
+                    
+                    
+                    if (downloader.soundFile != nil){
+                        HStack {
+                            Button(action: downloader.soundFile!.saveExportFile) {
+                                Text("Save")
+                            }
+                            Spacer()
+                            PlayerView(player: Player(source_url: downloader.soundFile!.tempURL))
+                        }
+                    }
                 }
-                Button(action: downloader.getAndSave) {
-                    Image(systemName: "triangle")
-                        .imageScale(.large)
-                        .accessibility(label: Text("Get Event"))
-                        .padding()
-                }
-                
-                Text(downloader.status)
-                if (downloader.soundFile != nil){
-                    PlayerView(player: Player(source_url: downloader.soundFile!.url))
-                }
-            }
-        }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+            }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+        }
     }
 }
 

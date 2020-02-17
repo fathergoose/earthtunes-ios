@@ -44,7 +44,7 @@ class EventDownloader: ObservableObject {
                 }
                 self.soundFile = SoundFile(sonification: sonification)
                 do {
-                    try self.soundFile!.saveFile()
+                    try self.soundFile!.saveTempFile()
                     DispatchQueue.main.async {
                         self.status = "saved"
                     }

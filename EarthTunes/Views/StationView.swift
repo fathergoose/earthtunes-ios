@@ -14,7 +14,7 @@ struct StationView: View {
 
     var body: some View {
         VStack (alignment: .leading) {
-            Text("Station").font(.headline).padding()
+            Text("Station").font(.subheadline).padding()
             HStack {
 
                 if(!showPicker) {

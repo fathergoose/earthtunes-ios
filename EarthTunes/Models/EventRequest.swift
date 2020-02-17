@@ -32,6 +32,10 @@ class EventRequest {
         return dateTimeString
     }
     
+    func startDateTimeURLFriendlyString() -> String {
+        return startDateTimeString().replacingOccurrences(of: ":", with: "")
+    }
+    
     func url() -> URL? {
         self.build()
         print("ComponentURL: ", self.components.url!)
